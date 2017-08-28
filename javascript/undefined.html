@@ -1,0 +1,70 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+
+<body>
+JS中六种数据类型（一）——undefined
+
+         JS中有6种数据类型：Undefined、Null、Boolean、Number、String和Object。JS中不支持任何创建自定义类型的机制，而所有值最终都将是这6种数据类型。其数据类型的动态性特点足以表示所有数据。JS提供typeof操作符来检测变量的数据类型。
+
+（typeof返回的是字符串有六种可能:"number","string","boolean","object","function","undefined"）。
+
+    我们先来看看Undefined这个数据类型吧，Undefined类型只有一个特殊的值——undefined。undefined表示"缺少值"，就是此处应该有一个值，但是还没有定义。典型用法是：
+
+   （1）变量被声明了，但没有赋值时，就等于undefined。
+
+   （2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。
+
+   （3）对象没有赋值的属性，该属性的值为undefined。
+
+   （4）函数没有返回值时，默认返回undefined。
+
+    例如：
+
+              var color;
+
+              alert(message == undefined);//true
+
+    这个例子只声明了变量color，但未对其初始化。比较这个变量与undefined字面量，结果表明它们是相等的。这个例子与下面的例子是等价的：
+
+              var color = undefined;
+
+              alert(color == undefined)  ;//true
+
+    不过，包含undefined值的变量与尚未定义的变量还是不一样的：
+
+             var color ;//变量声明之后默认取得undefined值
+
+              //未声明的变量
+
+              //var age
+
+              alert(color);   //"undefined"
+
+              alert(age);    //产生错误
+
+    然而，对未初始化的变量执行typeof操作符会返回undefined值，而对未声明的变量执行typeof操作符同样也会返回undefined值。
+
+              var color;//变量声明之后默认取得undefined值
+
+                 //未声明的变量
+
+              //var age
+
+              alert(typeof color);  //"undefined"
+
+              alert(typeof age);   // "undefined"
+
+   结果表明，对未初始化和未声明的变量执行 typeof 操作符都返回了 undefined 值；这个结果有其逻辑上的合理性。因为虽然这两种变量从技术角度看有本质区别，但实际上无论对哪种变量也不可能执行真正的操作。
+
+ 
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,28 @@
+在 HTML5 中，哪个元素用于组合标题元素？（）
+
+var arr=[{a:1},{}];
+arr.forEach(function(item,idx){
+    item.b=idx;
+});
+
+哪一个不是浏览器默认的天生inline-block标签（拥有内在尺寸，可设置高宽，不会自动换行）？
+
+超链接访问过后hover样式就不出现了，被点击访问过的超链接样式不再具有hover和active了，解决方法是改变CSS属性的排列顺序？（）
+
+
+var F=function(){};
+Object.prototype.a=function(){};
+Function.prototype .b=function(){};
+var f=new F();
+
+HTML5 中新增加的标签
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) and (-webkit-device-pixel-ratio:2){}
+
+下面结果为真的表达式是：（）
+正确答案: C   你的答案: B (错误)
+
+null instanceof Object
+null === undefined
+null == undefined
+NaN == NaN
